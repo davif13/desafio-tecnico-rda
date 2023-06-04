@@ -54,3 +54,9 @@ h1 {
   background-color: var(--secondary-color);
   color: var(--semiwhite-color);
 }
+
+@media only screen and (max-device-width: 480px) {
+  .content-container {
+    width: 90%;
+  }
+}
