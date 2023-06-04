@@ -1,5 +1,10 @@
+h1 {
+  text-align: center;
+}
+
 .screen-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0px;
@@ -21,17 +26,37 @@
   padding: 0px;
 }
 
-.contact-container {
+.result-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
 }
 
-h1 {
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
+
+.input {
+  text-align: center;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  width: 100%;
+  height: 40px;
   margin: 12px;
-  padding: 0px;
+  padding: 1px;
+  box-sizing: border-box;
+  outline: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.input:focus {
+  border: 2px solid #555;
 }
 
 .button {
@@ -53,4 +78,20 @@ h1 {
 .button:hover {
   background-color: var(--secondary-color);
   color: var(--semiwhite-color);
+}
+
+.secondary {
+  width: 17%;
+  background-color: var(--secondary-color);
+  color: var(--semiwhite-color);
+}
+
+@media only screen and (max-device-width: 480px) {
+  .content-container {
+    width: 90%;
+  }
+
+  .input-container {
+    width: 80%;
+  }
 }

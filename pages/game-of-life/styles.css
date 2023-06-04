@@ -1,5 +1,10 @@
+h1 {
+  text-align: center;
+}
+
 .screen-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0px;
@@ -21,17 +26,22 @@
   padding: 0px;
 }
 
-.contact-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  gap: 1px;
+  width: 210px; /* Tamanho total do grid (10 células + 9 gaps) */
+  height: 210px;
+  border: 1px solid black;
 }
 
-h1 {
-  margin: 12px;
-  padding: 0px;
+.cell {
+  background-color: white;
+}
+
+.alive {
+  background-color: black;
 }
 
 .button {
@@ -53,4 +63,17 @@ h1 {
 .button:hover {
   background-color: var(--secondary-color);
   color: var(--semiwhite-color);
+}
+
+.secondary {
+  width: 17%;
+  background-color: var(--secondary-color);
+  color: var(--semiwhite-color);
+}
+
+@media only screen and (max-device-width: 480px) {
+  .content-container {
+    width: 90%;
+  }
+
 }
