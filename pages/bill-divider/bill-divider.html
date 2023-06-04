@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../assets/global.css">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Rota das Oficinas - Desafio Técnico</title>
+</head>
+<body>
+  <div class="screen-container">
+    <div class="content-container">
+      <img src="../../assets/images/logo.png" alt="rota-das-oficinas-logo" />
+      <h1>Divisor de Conta de Restaurante</h1>
+      <div class="bid-container">
+          <div class="client-list">
+            <div class="client-add-container">
+              <input id="client-input" class="input" type="text" placeholder="Digite nome do cliente" />
+              <button onClick="onAddClient()" class="button">Adicionar</button>
+            </div>
+            <div class="client-table-container">
+              <table id="client-table">
+              </table>
+            </div>
+          </div>
+          <div class="product-list">
+            <div class="client-add-container">
+            <h3>Produtos</h3>
+            <button class="button" onClick="onOpenModal()">Adicionar Produto</button>
+          </div>
+            <div class="product-table-container">
+              <table id="product-table">
+              </table>
+            </div>
+            <div id="total-due-container" class="total-due-container">
+            </div>
+          </div>
+      </div>
+    </div>
+    <button onClick="onReturn()" class="button secondary">Voltar</button>
+  </div>
+  <div id="modal" class="modal-background">
+    <div class="modal-content">
+      <div class="modal-content-header">
+        <h3>Adicionar Produto</h3>
+        <button onclick="onCloseModal()" class="button secondary">Fechar</button>
+      </div>
+        <label for="input-title">Produto</label>
+        <input placeholder="Ex: Refrigerante" id="input-title" class="input" type="text" name="input-title"
+        required />
+        <label for="input-value">Valor</label>
+        <input placeholder="R$ 0,00" id="input-value" class="input" type="number" step="any" name="input-value" required />
+        <label for="input-buyers">Quem comprou?</label>
+        <div id="buyers-list" class="buyers-list">
+
+        </div>
+        <button type="button" id="addProductButton" onClick="onCallAddProduct()" class="button secondary">Adicionar</button>
+    </div>
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>

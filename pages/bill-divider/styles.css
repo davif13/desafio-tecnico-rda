@@ -1,0 +1,224 @@
+h1 {
+  text-align: center;
+}
+
+h3 {
+  margin-right: 24px;
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  margin: 10px;
+  padding: 1px;
+}
+
+.screen-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--semiwhite-color);
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 90%;
+  background-color: var(--primary-color);
+  border-radius: 12px;
+  padding: 0px;
+}
+
+.bid-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.client-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 345px;
+  height: 300px;
+  border: 1px solid var(--secondary-color);
+  margin: 2px;
+  border-radius: 12px;
+}
+
+.product-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 345px;
+  height: 300px;
+  border: 1px solid var(--secondary-color);
+  margin: 2px;
+  border-radius: 12px;
+}
+
+.client-add-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.client-table-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.product-table-container {
+  width: 100%;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
+
+.input {
+  text-align: center;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  width: 100%;
+  height: 40px;
+  margin: 12px;
+  padding: 1px;
+  box-sizing: border-box;
+  outline: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.input:focus {
+  border: 2px solid #555;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 40%;
+  height: 5%;
+  border-radius: 12px;
+  background-color: var(--semiwhite-color);
+  margin: 10px;
+  border: 0px solid;
+  color: var(--secondary-color);
+  cursor: pointer;
+  padding: 15px;
+}
+
+.button:hover {
+  background-color: var(--secondary-color);
+  color: var(--semiwhite-color);
+}
+
+.secondary {
+  width: 17%;
+  background-color: var(--secondary-color);
+  color: var(--semiwhite-color);
+}
+
+.total-due-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-background {
+  display: none;
+  flex-direction: column;
+  align-items: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(1, 4, 0, 0.2);
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  width: 480px;
+  background-color: #F4F4F9;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.modal-content-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.buyers-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.buyer-checkbox-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-align {
+  text-align: left;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.center-align {
+  text-align: center;
+}
+
+label {
+  margin-left: 12px;
+}
+
+@media only screen and (max-device-width: 480px) {
+  .content-container {
+    width: 90%;
+  }
+
+  .input-container {
+    width: 80%;
+  }
+}

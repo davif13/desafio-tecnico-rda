@@ -84,3 +84,7 @@ document.getElementById("startButton").addEventListener("click", () => {
 
 // Criar as células no grid ao carregar a página
 createCells();
+
+const onReturn = () => {
+  window.open("../../index.html", "_self");
+};
