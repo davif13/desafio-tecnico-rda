@@ -10,6 +10,10 @@ table {
   width: 100%;
 }
 
+label {
+  margin-left: 12px;
+}
+
 td {
   margin: 10px;
   padding: 1px;
@@ -207,10 +211,6 @@ td {
 
 .center-align {
   text-align: center;
-}
-
-label {
-  margin-left: 12px;
 }
 
 @media only screen and (max-device-width: 480px) {

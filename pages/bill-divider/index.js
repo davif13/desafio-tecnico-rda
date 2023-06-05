@@ -1,6 +1,8 @@
+// Variáveis globais: Lista de Clientes e Lista de Produtos
 let clientList = [];
 let productList = [];
 
+// Função que carrega a lista de clientes dentro do modal de adição de produto
 const onLoadModalBuyerList = () => {
   const buyerList = document.getElementById("buyers-list");
   buyerList.innerHTML = "";
@@ -24,6 +26,7 @@ const onLoadModalBuyerList = () => {
   });
 };
 
+// Função que carrega a lista de produtos em seu respectivo container na página
 const onLoadProductList = () => {
   const table = document.getElementById("product-table");
   const totalDue = document.getElementById("total-due-container");
@@ -72,6 +75,7 @@ const onLoadProductList = () => {
   totalDue.appendChild(totalDueValueContainer);
 };
 
+// Função que carrega a lista de clientes, junto ao valor devido e valor de gorjeta, em seu respectivo container
 const onLoadClientList = () => {
   const table = document.getElementById("client-table");
   table.innerHTML = "";
@@ -130,6 +134,7 @@ const onLoadClientList = () => {
   });
 };
 
+// Função para adicionar cliente
 const onAddClient = () => {
   const clientName = document.getElementById("client-input").value;
 
@@ -144,6 +149,7 @@ const onAddClient = () => {
   }
 };
 
+// Função que reseta os inputs do modal de adição de produto
 const resetModal = () => {
   const inputTitle = document.getElementById("input-title");
   const inputValue = document.getElementById("input-value");
@@ -159,6 +165,7 @@ const resetModal = () => {
   });
 };
 
+// Função para adicionar produto
 const onCallAddProduct = () => {
   const productValue = document.getElementById("input-value").value;
   const checkboxes = document.querySelectorAll(
@@ -191,6 +198,7 @@ const onCallAddProduct = () => {
   onLoadProductList();
 };
 
+// Função que abre o modal
 const onOpenModal = () => {
   if (clientList.length === 0) {
     alert("Adicione algum cliente!");
@@ -202,11 +210,13 @@ const onOpenModal = () => {
   }
 };
 
+// Função que fecha o modal
 const onCloseModal = () => {
   const modal = document.getElementById("modal");
   modal.style.display = "none";
 };
 
+// Função do botão Voltar
 const onReturn = () => {
   window.open("../../index.html", "_self");
 };

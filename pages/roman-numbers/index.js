@@ -1,7 +1,4 @@
-const onReturn = () => {
-  window.open("../../index.html", "_self");
-};
-
+// Função para mostrar o resultado das funções de conversão
 const loadResult = (result) => {
   const resultContainer = document.getElementById("result-container");
   resultContainer.innerHTML = "";
@@ -19,6 +16,7 @@ const loadResult = (result) => {
   resultContainer.appendChild(resultElement);
 };
 
+// Função de conversão de número arábico para romano
 const arabicToRoman = (number) => {
   const romanNumerals = [
     { value: 1000, symbol: "M" },
@@ -47,6 +45,7 @@ const arabicToRoman = (number) => {
   loadResult(romanNumber);
 };
 
+// Função de conversão de número romano para arábico
 const romanToArabic = (romanNumber) => {
   const romanNumerals = [
     { symbol: "M", value: 1000 },
@@ -114,6 +113,7 @@ const romanToArabic = (romanNumber) => {
   }
 };
 
+// Validação dos Inputs antes de chamar as respectivas funções
 const validateInput = () => {
   const arabicInput = document.getElementById("arabic-input").value;
   const romanInput = document.getElementById("roman-input").value;
@@ -135,4 +135,9 @@ const validateInput = () => {
   } else {
     alert("Preencha alguma opção!");
   }
+};
+
+// Função do botão de Voltar
+const onReturn = () => {
+  window.open("../../index.html", "_self");
 };

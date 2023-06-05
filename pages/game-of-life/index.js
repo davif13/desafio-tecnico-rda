@@ -85,6 +85,7 @@ document.getElementById("startButton").addEventListener("click", () => {
 // Criar as células no grid ao carregar a página
 createCells();
 
+// Função do botão Voltar
 const onReturn = () => {
   window.open("../../index.html", "_self");
 };
